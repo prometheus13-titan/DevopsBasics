@@ -3,59 +3,60 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Credit Card Offers</title>
-    <!-- Add your CSS stylesheets or links here -->
+    <title>Colorful Launch Page</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background: linear-gradient(to bottom, #ff6b6b, #8e44ad);
+            color: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #3498db;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Credit Card Offers</h1>
-        <p>Choose the Right Credit Card for You</p>
+        <h1>Welcome to Our Colorful Launch Page</h1>
+        <p>Experience the Vibrant World of Web Applications</p>
     </header>
 
-    <nav>
-        <!-- Add navigation links here -->
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Credit Cards</a></li>
-            <li><a href="#">Apply Now</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="featured-cards">
-            <h2>Featured Credit Cards</h2>
-            <!-- Add details about featured credit cards here -->
-            <div class="credit-card">
-                <h3>Platinum Card</h3>
-                <p>Get exclusive rewards and benefits with our Platinum Card.</p>
-                <p>Annual Fee: $99</p>
-                <a href="#">Apply Now</a>
-            </div>
-            <div class="credit-card">
-                <h3>Gold Card</h3>
-                <p>Experience premium privileges with our Gold Card.</p>
-                <p>Annual Fee: $79</p>
-                <a href="#">Apply Now</a>
-            </div>
-        </section>
-
-        <section id="how-it-works">
-            <h2>How It Works</h2>
-            <!-- Add information about how the credit card application process works -->
-            <p>Applying for a credit card is easy:</p>
-            <ol>
-                <li>Choose a card.</li>
-                <li>Click "Apply Now" to fill out the application.</li>
-                <li>We'll review your application and get back to you.</li>
-            </ol>
-        </section>
+        <p>This is a colorful JSP launch page designed to captivate your attention.</p>
+        <a href="your_main_application.jsp" class="cta-button">Get Started</a>
     </main>
 
     <footer>
-        <p>&copy; 2023 Credit Card Company. All rights reserved.</p>
+        <p>&copy; 2023 Colorful Launch Page. All rights reserved.</p>
     </footer>
-
-    <!-- Add your JavaScript scripts or links here -->
 </body>
 </html>
