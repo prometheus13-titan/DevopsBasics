@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hospital Landing Page</title>
+    <title>INDIAN Hospital Landing Page</title>
     <!-- Add your CSS stylesheets or links here -->
 </head>
 <body>
