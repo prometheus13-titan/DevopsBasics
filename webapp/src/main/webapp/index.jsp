@@ -1,33 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>POS Paplu  Chanpak</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Hospital Landing Page</title>
+    <!-- Add your CSS stylesheets or links here -->
 </head>
 <body>
-  <div class="container">
-    <h1>POS Device</h1>
-    <div class="items">
-      <div class="item">
-        <img src="item1.png" alt="Item 1">
-        <h2>Item Chanpak</h2>
-        <p>This is the description of item 1.</p>
-        <input type="number" name="quantity" value="1">
-        <p>$10.00</p>
-      </div>
-      <div class="item">
-        <img src="item2.png" alt="Item 2">
-        <h2>Item 2</h2>
-        <p>This is the description of item 2.</p>
-        <input type="number" name="quantity" value="1">
-        <p>$20.00</p>
-      </div>
-    </div>
-    <div class="total">
-      <h2>Total</h2>
-      <p>$30.00</p>
-    </div>
-    <button>Pay</button>
-  </div>
+    <header>
+        <h1>Welcome to Our Hospital</h1>
+        <p>Your Health, Our Priority</p>
+    </header>
+
+    <nav>
+        <!-- Add navigation links here -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Appointments</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of medical services to meet your healthcare needs.</p>
+            <!-- Add service descriptions and images here -->
+        </section>
+
+        <section id="doctors">
+            <h2>Meet Our Doctors</h2>
+            <p>Our team of experienced doctors is here to provide you with the best care.</p>
+            <!-- Add doctor profiles and images here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Hospital. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript scripts or links here -->
 </body>
 </html>
