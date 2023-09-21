@@ -1,62 +1,46 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Colorful Launch Page</title>
+    <title>Colorful Guessing Game</title>
     <style>
-        /* Add your custom CSS styles here */
         body {
-            background: linear-gradient(to bottom, #ff6b6b, #8e44ad);
-            color: #fff;
             text-align: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            background-color: #f0f0f0;
         }
-
-        header {
-            background: #3498db;
-            padding: 20px 0;
-        }
-
-        h1 {
-            font-size: 3em;
-        }
-
-        p {
-            font-size: 1.2em;
-        }
-
-        .cta-button {
+        .game-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #888888;
             display: inline-block;
-            background: #e74c3c;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .cta-button:hover {
-            background: #c0392b;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Colorful Launch Page</h1>
-        <p>Experience the Vibrant World of Web Applications</p>
-    </header>
+    <h1>Colorful Guessing Game</h1>
+    <div class="game-container">
+        <h2>Guess a Number Between 1 and 10</h2>
+        <form action="colorful_game.jsp" method="post">
+            Enter your guess: <input type="number" name="guess" min="1" max="10">
+            <input type="submit" value="Submit">
+        </form>
+        
+        <%
+            // Java code to handle the game logic
+            int randomNumber = (int) (Math.random() * 10) + 1;
+            String message = "";
 
-    <main>
-        <p>This is a colorful JSP launch page designed to captivate your attention.</p>
-        <a href="your_main_application.jsp" class="cta-button">Get Started</a>
-    </main>
+            if (request.getMethod().equals("POST")) {
+                int userGuess = Integer.parseInt(request.getParameter("guess"));
+                if (userGuess == randomNumber) {
+                    message = "Congratulations! You guessed the correct number.";
+                } else {
+                    message = "Try again. The correct number is not " + userGuess + ".";
+                }
+            }
+        %>
 
-    <footer>
-        <p>&copy; 2023 Colorful Launch Page. All rights reserved.</p>
-    </footer>
+        <p><%= message %></p>
+    </div>
 </body>
 </html>
