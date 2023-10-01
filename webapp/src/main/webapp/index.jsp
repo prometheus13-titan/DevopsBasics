@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Colorful Guessing Game</title>
+    <title>Colorful Homepage</title>
     <style>
         body {
-            text-align: center;
             background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
-        .game-container {
-            background-color: #fff;
+        .header {
+            background-color: #3498db;
+            color: white;
             padding: 20px;
+            text-align: center;
+        }
+        .content {
+            margin: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: left;
+            text-align: center;
+            border: 2px solid #3498db;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px #888888;
-            display: inline-block;
+            background-color: #ecf0f1;
+        }
+        .box h2 {
+            color: #3498db;
         }
     </style>
 </head>
 <body>
-    <h1>Colorful Guessing Game</h1>
-    <div class="game-container">
-        <h2>Guess a Number Between 1 and 10</h2>
-        <form action="colorful_game.jsp" method="post">
-            Enter your guess: <input type="number" name="guess" min="1" max="10">
-            <input type="submit" value="Submit">
-        </form>
-        
-        <%
-            // Java code to handle the game logic
-            int randomNumber = (int) (Math.random() * 10) + 1;
-            String message = "";
-
-            if (request.getMethod().equals("POST")) {
-                int userGuess = Integer.parseInt(request.getParameter("guess"));
-                if (userGuess == randomNumber) {
-                    message = "Congratulations! You guessed the correct number.";
-                } else {
-                    message = "Try again. The correct number is not " + userGuess + ".";
-                }
-            }
-        %>
-
-        <p><%= message %></p>
+    <div class="header">
+        <h1>Welcome to our Colorful Homepage</h1>
+    </div>
+    <div class="content">
+        <div class="box">
+            <h2>Section 1</h2>
+            <p>This is the first section.</p>
+        </div>
+        <div class="box">
+            <h2>Section 2</h2>
+            <p>This is the second section.</p>
+        </div>
+        <div class="box">
+            <h2>Section 3</h2>
+            <p>This is the third section.</p>
+        </div>
     </div>
 </body>
 </html>
