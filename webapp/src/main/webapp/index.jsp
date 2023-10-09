@@ -6,7 +6,7 @@
     <title>Pink Page</title>
     <style>
         body {
-            background-color: purple;
+            background-color: pink;
         }
     </style>
 </head>
