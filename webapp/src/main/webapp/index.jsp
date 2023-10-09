@@ -1,15 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Beautiful Images</title>
+    <meta charset="UTF-8">
+    <title>Pink Page</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-    <h1>Beautiful Images</h1>
-    <div class="image-container">
-        <img src="path/to/image1.jpg" alt="Beautiful Image 1">
-        <img src="path/to/image2.jpg" alt="Beautiful Image 2">
-        <img src="path/to/image3.jpg" alt="Beautiful Image 3">
-    </div>
+    <h1>Welcome to the Pink Page</h1>
+    <p>This is a pink-colored page created using JSP.</p>
 </body>
 </html>
