@@ -6,12 +6,11 @@
     <title>Pink Page</title>
     <style>
         body {
-            background-color: pink;
+            background-color: gold;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Pink Page</h1>
-    <p>This is a pink-colored page created using JSP.</p>
-</body>
+    <h1>Welcome to the Page</h1>
+  </body>
 </html>
